@@ -28,7 +28,6 @@ Additional features are generated for improved customer segmentation:
 ### 4. Clustering and Dimensionality Reduction
 The following methods are used for customer segmentation:
 - **KMeans Clustering**: Customers are grouped based on patterns in their transaction history and demographic details.
-- **Gaussian Mixture Models (GMM)**: An alternative to KMeans, offering more flexibility by assuming clusters follow a Gaussian distribution.
 - **PCA**: Principal Component Analysis (PCA) is used to reduce dimensionality while preserving variance in the data.
 - **t-SNE**: t-Distributed Stochastic Neighbor Embedding is applied to visualize high-dimensional data in two or three dimensions.
 

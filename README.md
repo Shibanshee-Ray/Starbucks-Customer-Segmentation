@@ -51,6 +51,22 @@ The project makes extensive use of visualizations to assess the clusters and und
    ```bash
    jupyter notebook Starbucks_Customer_Segmentation.ipynb
    ```
+## My findings 
+
+-(We will refer to data points as "segments" where applicable)
+
+-One segment represented users who were active and frequent in their interactions with our system. These users provide us with consistent engagement and represent high-value customers. They are responsive to most updates, frequently exploring new features and services. Since they are already integrated into our ecosystem, we may not need to overwhelm them with new prompts, instead focusing on retaining them through minor, tailored enhancements.
+
+-Another segment comprised users who were more sporadic in their usage but engaged strongly with discounts and promotional offers. However, they were less responsive to offers requiring more than a basic interaction (e.g., multiple feature use in a single session). A possible strategy would be to highlight simple, direct offerings for this group, encouraging them to interact without adding too many complex steps.
+
+-A third segment was identified as users who only engaged during promotional periods. Their usage patterns suggest that small but frequent incentives could turn them into regular users. By offering them periodic reminders and targeted promotions over the weekends, we may convert their occasional interest into long-term engagement.
+
+-Another interesting cluster featured users who did not show significant responsiveness to any particular kind of interaction or incentive. These could represent either a more cost-sensitive group or users who are simply not interested in the current offerings. An effective strategy might involve introducing a more basic tier of features or experimenting with simplified user flows to cater to them.
+
+-A notable segment reflected users who had moderate interactions and steady usage patterns. They didn't seem to require constant updates or promotions but could benefit from more customized features that align with their steady, reliable use of the system.
+
+-Finally, one segment displayed no regular pattern of interaction and was composed of users who visited the platform once or twice but never returned. This group is a reminder that not every user will follow a predictable journey, and it's important to recognize that not all mathematical patterns directly translate into practical actions. Some users simply may not be our target audience, and forcing engagement here may not be a productive focus.
+
 
 ## Conclusion
 

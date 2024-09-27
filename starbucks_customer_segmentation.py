@@ -17,7 +17,6 @@ import sklearn
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import PowerTransformer, MinMaxScaler
 from sklearn.metrics import silhouette_samples, silhouette_score
-from sklearn.mixture import GaussianMixture
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.manifold import TSNE
@@ -1087,7 +1086,7 @@ def fit_predict_data(X, n_clusters, est='KMeans'):
     Args:
     X (array): input data
     n_clusters (int): number of clusters to form
-    est (str) [default='KMeans']: estimator to use; 'KMeans' or 'GaussianMixture'
+    est (str) [default='KMeans']: estimator to use; 'KMeans'
 
     Return:
     model (self): fitted estimator
@@ -1095,8 +1094,7 @@ def fit_predict_data(X, n_clusters, est='KMeans'):
     '''
 
     est_dict = {
-        'KMeans': KMeans(n_clusters, random_state=42),
-        'GaussianMixture': GaussianMixture(n_clusters, random_state=42)}
+        'KMeans': KMeans(n_clusters, random_state=42)}
 
     model = est_dict[est]
     labels = model.fit_predict(X)
@@ -1107,13 +1105,12 @@ def plot_optimization_analysis(df, ev, est='KMeans', tsne=False, sample_size=0.0
     '''
     Plot change across number of clusters ranging between 2 and 30 clusters in
     average silhouette score and sum of squared errors when est is 'KMeans'
-    or 4 trials in average silhouette score when est is `GaussianMixture`
 
     Args:
     df (pd.DataFrame): subject dataframe
     ev (int, float, None, str): explained variance correspond to `n_components`
         parameter in PCA() class and hence inherits its arguments
-    est (str) [default='KMeans']: estimator to use; 'KMeans' or 'GaussianMixture'
+    est (str) [default='KMeans']: estimator to use; 'KMeans'
     tsne (bool) [default=False]: When True, apply TSNE() on dataframe
     sample_size (float) [default=0.05] = size of randomly selected sample
 
@@ -1200,7 +1197,7 @@ def plot_silhouette_analysis(df, ev, n_clusters, est='KMeans', tsne=False):
     ev (int, float, None, str): explained variance correspond to `n_components`
         parameter in PCA() class and hence inherits its arguments
     n_clusters (int): number of clusters to form
-    est (str) [default='KMeans']: estimator to use; 'KMeans' or 'GaussianMixture'
+    est (str) [default='KMeans']: estimator to use; 'KMeans'
     tsne (bool) [default=False]: When True, apply TSNE() on dataframe
 
     Return:

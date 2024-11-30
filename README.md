@@ -41,16 +41,9 @@ Silhouette score and visualization techniques are used to evaluate the quality o
 - `seaborn` and `matplotlib` for data visualization.
 
 ## Visualization
-The project makes extensive use of visualizations to assess the clusters and understand the data better:
-- PCA and t-SNE plots for cluster visualization.
+- PCA plots for cluster visualization.
 - Heatmaps and bar plots to visualize feature distributions.
 
-## How to Run
-1. Clone this repository and navigate to the project directory.
-2. Run the Jupyter notebook or script to execute the analysis
-   ```bash
-   jupyter notebook Starbucks_Customer_Segmentation.ipynb
-   ```
 ## My findings 
 
 -(We will refer to data points as "segments" where applicable)
